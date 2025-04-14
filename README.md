@@ -9,9 +9,11 @@ Node.js and npm: Required for the backend server. Download from https://nodejs.o
 Steps:
 
 1.Navigate to Project Directory:
+
 cd path/to/cosmos-odyssey
 
 2.Install Dependencies:
+
 npm install
 
 3.Run the Server:
