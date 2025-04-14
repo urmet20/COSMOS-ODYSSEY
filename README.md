@@ -15,7 +15,9 @@ cd path/to/cosmos-odyssey
 npm install
 
 3.Run the Server:
+
 node server/index.js
+
 The server will typically start on port 3000.
 Access the Application:
 Open your web browser and go to:
