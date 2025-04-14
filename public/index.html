@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmos Odyssey - Solar System Travel Deals</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Cosmos Odyssey</h1>
+        <p class="tagline">Explore the Solar System at the Best Prices</p>
+        <div id="pricelist-info">
+            <span>Valid Until:</span>
+            <span id="pricelist-valid-until">Loading...</span>
+            <div id="countdown">Loading countdown...</div>
+        </div>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <h2>Search for Travel Routes</h2>
+            <form id="search-form">
+                <div class="form-group">
+                    <label for="origin">Origin:</label>
+                    <select id="origin" required>
+                        <option value="">Loading planets...</option>
+                        </select>
+                </div>
+                <div class="form-group">
+                    <label for="destination">Destination:</label>
+                    <select id="destination" required>
+                        <option value="">Loading planets...</option>
+                        </select>
+                </div>
+                <button type="submit" class="btn">Search Routes</button>
+            </form>
+        </section>
+
+        <section class="filters-section" id="filters-section" style="display: none;">
+            <h3>Filter and Sort</h3>
+            <div class="filter-controls">
+                <div class="form-group">
+                    <label for="company-filter">Filter by Company:</label>
+                    <select id="company-filter">
+                        <option value="">All Companies</option>
+                        </select>
+                </div>
+                <div class="form-group">
+                    <label for="sort-by">Sort by:</label>
+                    <select id="sort-by">
+                        <option value="price">Price (Low to High)</option>
+                        <option value="price-desc">Price (High to Low)</option>
+                        <option value="time">Travel Time (Short to Long)</option>
+                        <option value="time-desc">Travel Time (Long to Short)</option>
+                        <option value="distance">Distance (Low to High)</option>
+                        <option value="distance-desc">Distance (High to Low)</option>
+                        </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="results-section" id="results-section" style="display: none;">
+            <h2>Available Routes</h2>
+            <div id="routes-container">
+                </div>
+            <div id="pagination-controls" class="pagination-controls">
+                </div>
+        </section>
+
+        <section class="booking-section" id="booking-section" style="display: none;">
+            <h2>Make a Reservation</h2>
+            <form id="booking-form">
+                <div class="form-group">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" required>
+                </div>
+                <div class="route-summary" id="route-summary">
+                    </div>
+                <button type="submit" class="btn">Confirm Reservation</button>
+            </form>
+        </section>
+
+        <section class="reservations-section">
+            <h2>Your Reservations</h2>
+            <div id="reservations-container">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Cosmos Odyssey - Interplanetary Travel Agency</p>
+    </footer>
+
+    <div id="notification" class="notification"></div>
+
+    <script src="js/api.js"></script>
+    <script src="js/dom.js"></script>
+    <script src="js/state.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/notification.js"></script>
+    <script src="js/pricelistUI.js"></script>
+    <script src="js/routeUI.js"></script>
+    <script src="js/bookingUI.js"></script>
+    <script src="js/reservationUI.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
